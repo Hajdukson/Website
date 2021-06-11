@@ -1,8 +1,7 @@
 body {
   height: 100vh;
-
-  /* background: linear-gradient(#9198e5d8, #e664643b),
-    url("./Images/computerstation.jpg"); */
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 /* Banner */
@@ -24,59 +23,56 @@ body {
   float: right;
   margin: 35px;
 }
+#index .imgs {
+  display: flex;
+  justify-content: center;
+}
+#index img {
+  border-radius: 3px;
+  width: 500px;
+  height: 333px;
+  margin: 10px;
+  transition: all 0.5s;
+}
+#index img:hover {
+  width: 520px;
+  height: 353px;
+}
+
 /* Banner */
 
 /* Home */
-#index {
-  position: relative;
-  height: auto;
-  width: auto;
-}
-#index img {
-  width: 50%;
-}
-#index .img-helper {
-  position: relative;
-  margin: 30px;
-  width: auto;
-  height: auto;
-  display: block;
-}
-
-#index .img::before {
-  content: "";
-  position: absolute;
-  border: gray 2px solid;
-  background-color: gray;
-  height: 100%;
-  width: 50%;
-  left: -20px;
-  top: -20px;
-  z-index: -1;
-}
 
 .about {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
+  position: absolute;
+  top: 450px;
   line-height: 30px;
   text-align: center;
   padding: 0 3%;
 }
 
 .about-left {
+  margin-top: 10px;
   box-sizing: border-box;
-  flex: 30%;
+  flex: 50%;
+  padding: 5%;
 }
 
 .about-right {
-  height: auto;
-  padding: 0 5%;
   flex: 50%;
+  padding: 5%;
 }
-
-@media screen and (max-width: 580px) {
+footer {
+  position: absolute;
+  top: 1300px;
+  height: 100px;
+  width: 100vw;
+  background-color: black;
+}
+@media screen and (max-width: 650px) {
   .right-heading {
     display: none;
   }
@@ -85,6 +81,9 @@ body {
   .about-right,
   .about-left {
     flex: 100%;
+  }
+  .about {
+    top: 160px;
   }
   img,
   .img::before {

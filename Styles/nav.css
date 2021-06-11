@@ -31,6 +31,7 @@ nav .logo {
   align-items: center;
   font-size: 24px;
   color: #fff;
+  font-weight: 200;
 }
 nav .website-links {
   padding: 0;
@@ -47,8 +48,8 @@ nav .website-links li {
 }
 nav .website-links a {
   display: block;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
+
   color: white;
   text-decoration: none;
   letter-spacing: 1px;
