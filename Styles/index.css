@@ -1,92 +1,45 @@
-body {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-}
-
 /* Banner */
 .banner {
   margin-top: 60px;
-  background-color: rgba(0, 0, 0, 0.493);
-  height: 100px;
   background-size: cover;
   background-attachment: fixed;
 }
-.banner h2 {
-  font-size: 1.4rem;
-}
-.banner .left-heading {
-  float: left;
-  margin: 20px;
-}
-.banner .right-heading {
-  float: right;
-  margin: 35px;
-}
-#index .imgs {
-  display: flex;
-  justify-content: center;
-}
-#index img {
-  border-radius: 3px;
-  width: 500px;
-  height: 333px;
-  margin: 10px;
-  transition: all 0.5s;
-}
-#index img:hover {
-  width: 520px;
-  height: 353px;
+.banner {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(/Images/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-/* Banner */
-
-/* Home */
-
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: absolute;
-  top: 450px;
-  line-height: 30px;
+.banner h1 {
   text-align: center;
-  padding: 0 3%;
+  height: 50%;
+  color: white;
+  font-weight: 300;
+}
+/* showcase */
+
+.showcase h1 {
+  height: 50px;
+}
+.showcase .grid {
+  overflow: visible;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.about-left {
-  margin-top: 10px;
-  box-sizing: border-box;
-  flex: 50%;
-  padding: 5%;
+.showcase .card {
+  background-color: rgb(243, 209, 209);
+  padding: 30px;
+  height: 150px;
 }
-
-.about-right {
-  flex: 50%;
-  padding: 5%;
-}
-footer {
-  position: absolute;
-  top: 1300px;
-  height: 100px;
-  width: 100vw;
-  background-color: black;
-}
-@media screen and (max-width: 650px) {
-  .right-heading {
-    display: none;
-  }
-}
-@media screen and (max-width: 850px) {
-  .about-right,
-  .about-left {
-    flex: 100%;
-  }
-  .about {
-    top: 160px;
-  }
-  img,
-  .img::before {
-    display: none;
-  }
+.showcase-center h1 {
+  margin: 5px;
+  font-size: 20px;
 }
