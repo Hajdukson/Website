@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="/Styles/style.css" />
 
     <title>Home</title>
@@ -19,7 +20,7 @@
     <nav style="font-family: 'Roboto', sans-serif">
       <div class="container flex">
         <input id="nav-toggle-button" type="checkbox" />
-        <div class="logo flex"><strong>GEO</strong> DEZJA</div>
+        <div class="logo flex"><strong>AW</strong> GEO</div>
         <ul class="website-links flex">
           <li><a href="#top">Home</a></li>
           <li><a href="#about">Oferta</a></li>
@@ -35,10 +36,13 @@
     </nav>
 
     <div class="banner" style="font-family: 'Roboto', sans-serif">
-      <h1 class="container flex">
-        Usługi geodezyjne <br />
-        Adam Mickiweicz
-      </h1>
+      <div class="container flex">
+        <h1>
+          Usługi geodezyjne <br />
+          <strong>AW</strong>GEO
+        </h1>
+        <a class="bnt" href="#about">Dowiedz sie wiecej</a>
+      </div>
     </div>
 
     <section
@@ -88,8 +92,8 @@
       </div>
     </section>
 
-    <div class="gallery">
-      <div class="container flex">
+    <div class="container gallery">
+      <div class="flex">
         <div class="image">
           <span><img src="/Images/3.jpg" alt="" /></span>
         </div>
@@ -107,6 +111,29 @@
         </div>
         <div class="image">
           <span><img src="/Images/1.jpg" alt="" /></span>
+        </div>
+      </div>
+
+      <div class="preview-box">
+        <div class="details">
+          <span class="title">
+            Image
+            <p class="current-img">3</p>
+            of
+            <p class="total-img">6</p>
+          </span>
+          <span class="icon fas fa-times"> </span>
+        </div>
+        <div class="img-box">
+          <div class="slide prev">
+            <i class="fas fa-angle-left"></i>
+          </div>
+        </div>
+        <div class="img-box">
+          <div class="slide prev">
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <img src="/Images/1.jpg" alt="" />
         </div>
       </div>
     </div>

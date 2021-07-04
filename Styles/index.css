@@ -22,9 +22,14 @@
 
 .banner h1 {
   text-align: center;
-  height: 50%;
+  height: 30%;
   color: white;
   font-weight: 400;
+}
+.banner .container {
+  flex-direction: column;
+  justify-content: end;
+  padding-top: 100px;
 }
 /* showcase */
 
@@ -71,8 +76,11 @@ footer {
 }
 
 /* Gallery */
+.gallery {
+  margin-top: 30px;
+}
 .gallery .image {
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   padding: 10px;
 }
 .gallery span {
@@ -88,7 +96,30 @@ footer {
 .gallery .flex {
   flex-wrap: wrap;
 }
-
 .gallery .image img:hover {
   transform: scale(1.1);
+}
+.preview-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.preview-box .img-box {
+  display: flex;
+  width: 100%;
+}
+.preview-box .img-box img {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .gallery .image {
+    width: calc(100% / 3);
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery .image {
+    width: calc(100% / 2);
+    padding: 10px;
+  }
 }
