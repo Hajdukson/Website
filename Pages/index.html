@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Styles/nav.css" />
     <link rel="stylesheet" href="/Styles/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="../dist/css/lightbox.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
       rel="stylesheet"
@@ -50,9 +51,9 @@
       class="showcase"
       style="font-family: 'Roboto', sans-serif"
     >
-      <h1 class="heading flex container">Co oferujemy</h1>
+      <h1 class="flex container">Co oferujemy</h1>
       <div class="container grid">
-        <div class="showcase-left card">
+        <div class="showcase card">
           <img src="/Images/tach.jpg" alt="" />
           <h1>Lorem, ipsum.</h1>
           <p>
@@ -60,7 +61,7 @@
             mollitia perspiciatis nisi ad, neque reiciendis quia delectus
           </p>
         </div>
-        <div class="showcase-center card">
+        <div class="showcase card">
           <img src="/Images/gps.jpg" alt="" />
           <h1>Lorem, ipsum dolor.</h1>
           <ul>
@@ -71,7 +72,7 @@
             </li>
           </ul>
         </div>
-        <div class="showcase-right card">
+        <div class="showcase card">
           <img src="/Images/tach2.jpg" alt="" />
           <h1>Lorem ipsum dolor sit.</h1>
           <p>
@@ -92,54 +93,46 @@
       </div>
     </section>
 
-    <div class="container gallery">
-      <div class="flex">
+    <div class="gallery container" style="font-family: 'Roboto', sans-serif">
+      <h1>Galeria</h1>
+      <div class="photos flex">
         <div class="image">
-          <span><img src="/Images/3.jpg" alt="" /></span>
-        </div>
-        <div class="image">
-          <span><img src="/Images/3.jpg" alt="" /></span>
-        </div>
-        <div class="image">
-          <span><img src="/Images/2.jpg" alt="" /></span>
+          <a href="/Images/image-1.jpg" data-lightbox="image-set"
+            ><img src="/Images/image-1.jpg" alt=""
+          /></a>
         </div>
         <div class="image">
-          <span><img src="/Images/2.jpg" alt="" /></span>
+          <a href="/Images/image-2.jpg" data-lightbox="image-set"
+            ><img src="/Images/image-2.jpg" alt=""
+          /></a>
         </div>
         <div class="image">
-          <span><img src="/Images/1.jpg" alt="" /></span>
+          <a href="/Images/image-3.jpg" data-lightbox="image-set"
+            ><img src="/Images/image-3.jpg" alt=""
+          /></a>
         </div>
         <div class="image">
-          <span><img src="/Images/1.jpg" alt="" /></span>
+          <a href="/Images/image-4.jpg" data-lightbox="image-set"
+            ><img src="/Images/image-4.jpg" alt=""
+          /></a>
         </div>
-      </div>
-
-      <div class="preview-box">
-        <div class="details">
-          <span class="title">
-            Image
-            <p class="current-img">3</p>
-            of
-            <p class="total-img">6</p>
-          </span>
-          <span class="icon fas fa-times"> </span>
+        <div class="image">
+          <a href="/Images/image-4.jpg" data-lightbox="image-set"
+            ><img src="/Images/image-4.jpg" alt=""
+          /></a>
         </div>
-        <div class="img-box">
-          <div class="slide prev">
-            <i class="fas fa-angle-left"></i>
-          </div>
-        </div>
-        <div class="img-box">
-          <div class="slide prev">
-            <i class="fas fa-angle-left"></i>
-          </div>
-          <img src="/Images/1.jpg" alt="" />
+        <div class="image">
+          <a href="/Images/image-4.jpg" data-lightbox="image-set"
+            ><img src="/Images/image-4.jpg" alt=""
+          /></a>
         </div>
       </div>
     </div>
 
     <footer id="footer">
-      <div class="container"></div>
+      <div></div>
     </footer>
+
+    <script src="../dist/js/lightbox-plus-jquery.js"></script>
   </body>
 </html>
