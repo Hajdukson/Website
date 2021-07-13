@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="/Styles/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="../dist/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Styles/footer.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="/Styles/style.css" />
-
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Home</title>
   </head>
-  <body>
-    <nav style="font-family: 'Roboto', sans-serif">
+  <body style="font-family: 'Roboto', sans-serif">
+    <nav>
       <div class="container flex">
         <input id="nav-toggle-button" type="checkbox" />
         <div class="logo flex"><strong>AW</strong> GEO</div>
@@ -36,7 +40,7 @@
       </div>
     </nav>
 
-    <div class="banner" style="font-family: 'Roboto', sans-serif">
+    <div class="banner">
       <div class="container flex">
         <h1>
           Usługi geodezyjne <br />
@@ -46,11 +50,7 @@
       </div>
     </div>
 
-    <section
-      id="about"
-      class="showcase"
-      style="font-family: 'Roboto', sans-serif"
-    >
+    <section id="about" class="showcase">
       <h1 class="flex container">Co oferujemy</h1>
       <div class="container grid">
         <div class="showcase card">
@@ -82,7 +82,7 @@
         </div>
       </div>
     </section>
-    <section class="more-about" style="font-family: 'Roboto', sans-serif">
+    <section class="more-about">
       <div class="container">
         <h1>Dlaczego my?</h1>
         <p>
@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <div class="gallery container" style="font-family: 'Roboto', sans-serif">
+    <div class="gallery container">
       <h1>Galeria</h1>
       <div class="photos flex">
         <div class="image">
@@ -130,7 +130,18 @@
     </div>
 
     <footer id="footer">
-      <div></div>
+      <div class="flex">
+        <h1>Kontakt</h1>
+        <span class="fas fa-phone-alt" style="font-size: 20px; color: white">
+          <span>+48 212 321 321</span></span
+        >
+        <span
+          class="fas fa-envelope-open"
+          style="font-size: 20px; color: white"
+        >
+          <span>exaple@gamil.com</span>
+        </span>
+      </div>
     </footer>
 
     <script src="../dist/js/lightbox-plus-jquery.js"></script>

@@ -49,7 +49,7 @@
   padding: 30px;
   height: 500px;
 }
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 1085px) {
   .showcase .grid {
     overflow: visible;
     gap: 70px;
@@ -58,6 +58,15 @@
   }
   .showcase img {
     height: 188px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .showcase .grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+  }
+  .showcase img {
+    height: 170px;
   }
 }
 /* .showcase .heading {
@@ -75,12 +84,6 @@
 }
 .more-about .container {
   padding: 0 70px;
-}
-
-footer {
-  margin-top: 30px;
-  height: 130px;
-  background-color: var(--primary-color);
 }
 
 /* Gallery */
