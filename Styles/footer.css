@@ -1,19 +1,71 @@
+:root {
+  --container-with: 325px;
+}
 footer {
   margin-top: 30px;
-  height: 130px;
+  height: 200px;
   background-color: black;
   color: white;
   font-family: "Roboto", sans-serif;
 }
 footer h1 {
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
 }
 footer .flex {
-  flex-direction: column;
+  justify-items: center;
+  justify-content: space-between;
+}
+footer .container {
+  max-width: 1100px;
 }
 footer span {
   padding: 8px;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
+}
+footer a {
+  text-decoration: none;
+  color: brown;
+}
+footer li {
+  list-style: none;
+}
+footer h3 {
+  font-weight: 200;
+  font-size: 14px;
+}
+.item {
+  font-size: 20px;
+  color: white;
+}
+
+footer .copyright {
+  width: var(--container-with);
+}
+
+@media screen and (max-width: 730px) {
+  footer .flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer {
+    height: 250px;
+  }
+  footer .contact {
+    margin-bottom: 10px;
+  }
+  footer .copyright {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .item {
+    font-size: 16px;
+    color: white;
+  }
+
+  footer .copyright h1 {
+    font-size: 16px;
+  }
 }
