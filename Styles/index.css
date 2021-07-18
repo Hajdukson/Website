@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: black;
 }
@@ -21,6 +25,7 @@
 }
 
 .banner h1 {
+  position: relative;
   text-align: center;
   height: 30%;
   color: white;
@@ -30,6 +35,13 @@
   flex-direction: column;
   justify-content: end;
   padding-top: 100px;
+}
+.banner .bnt {
+  position: absolute;
+  bottom: 100px;
+}
+.bnt:hover {
+  background-color: rgb(243, 209, 209, 0.5);
 }
 /* showcase */
 
@@ -89,7 +101,7 @@
 /* Gallery */
 .gallery h1 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .photos {

@@ -31,7 +31,11 @@
 
 .bnt {
   border: 2px solid white;
-  border-radius: 3px;
+  border-radius: 6px;
+  font-size: 24px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
 }
 img {
   width: 100%;
