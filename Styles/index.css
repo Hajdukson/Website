@@ -1,5 +1,7 @@
-html {
+html,
+body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -7,7 +9,6 @@ html {
 }
 /* Banner */
 .banner {
-  margin-top: 60px;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -22,10 +23,13 @@ html {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  overflow: visible;
+}
+.banner {
+  position: relative;
 }
 
 .banner h1 {
-  position: relative;
   text-align: center;
   height: 30%;
   color: white;
@@ -75,7 +79,7 @@ html {
 @media screen and (max-width: 400px) {
   .showcase .grid {
     grid-template-columns: repeat(1, 1fr);
-    width: 300px;
+    width: 280px;
   }
   .showcase img {
     height: 170px;
