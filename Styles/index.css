@@ -38,7 +38,7 @@ body {
 }
 .banner .container {
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-between;
   padding-top: 100px;
 }
 .banner .bnt {
